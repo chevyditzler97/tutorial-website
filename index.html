@@ -33,33 +33,38 @@
   <main>
     <section id="about">
       <h2>About</h2>
-      <div class="section__description">
-        <div class="section__description--wrapper">
-          <p class="section__description-para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.
-          </p>
-          <p class="section__description-para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.
-          </p>
+      <div class="row">
+        <div class="section__description">
+          <div class="section__description--wrapper">
+            <p class="section__description-para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.
+            </p>
+            <p class="section__description-para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.
+            </p>
+          </div>
+          <figure class="about__image--wrapper">
+            <img src="./assets/about.jpg" alt="learn">
+          </figure>
         </div>
-        <figure class="about__image--wrapper">
-          <img src="./assets/about.jpg" alt="learn">
-        </figure>
       </div>
     </section>
 
     <section id="discord">
       <h2>Discord</h2>
-      <figure>
-        <img src="./assets/discord.png" alt="discord">
-      </figure>
-      <p>Join our Discord server to connect with other learners and get help.</p>
+      <div class="row">
+        <div class="section__description">
+          <figure class="about__image--wrapper">
+            <img src="./assets/discord.png" alt="discord">
+          </figure>
+          <p class="section__description-para">Join our Discord server to connect with other learners and get help.</p>
+        </div>
+      </div>
     </section>
 
     <section id="contact">
       <h2>Contact</h2>
-      <p>Get in touch with us if you have any questions or feedback.</p>
       <form>
         <span>Email:</span>
-        <input type="text" placeholder="janedoe@example.com">
+        <input type="email" placeholder="janedoe@example.com">
         <span>Message:</span>
         <textarea type="text" placeholder="Your message here"></textarea>
 
@@ -69,12 +74,12 @@
 
   </main>
   <footer>
-    <img src="./assets/FES.svg" alt="FES">
-    <div>
-      <a href="#about">About</a>
-      <a href="#discord">Discord</a>
-      <a href="#contact">Contact</a>
-      <a href="#courses">Courses</a>
+    <img class="footer__logo"src="./assets/FES.svg" alt="FES">
+    <div class="footer__links">
+      <a class="footer__link" href="#about">About</a>
+      <a class="footer__link" href="#discord">Discord</a>
+      <a class="footer__link" href="#contact">Contact</a>
+      <a class="footer__link" href="#courses">Courses</a>
     </div>
     <p>© 2024 Frontend Simplified. All rights reserved.</p>
   </footer>
